@@ -5,65 +5,37 @@ export const siteConfig = {
   description: 'Welcome to a the next generation of dev-signer',
   navItems: [
     {
-      label: 'Home',
+      label: 'Profile',
       href: '/',
     },
     {
-      label: 'Docs',
-      href: '/docs',
+      label: 'Dashboard',
+      href: '/',
     },
     {
-      label: 'Pricing',
-      href: '/pricing',
-    },
-    {
-      label: 'Blog',
-      href: '/blog',
-    },
-    {
-      label: 'About',
-      href: '/about',
+      label: 'Projects',
+      href: '/',
     },
   ],
   navMenuItems: [
     {
       label: 'Profile',
-      href: '/profile',
+      href: '/',
     },
     {
       label: 'Dashboard',
-      href: '/dashboard',
+      href: '/',
     },
     {
       label: 'Projects',
-      href: '/projects',
-    },
-    {
-      label: 'Team',
-      href: '/team',
-    },
-    {
-      label: 'Calendar',
-      href: '/calendar',
-    },
-    {
-      label: 'Settings',
-      href: '/settings',
-    },
-    {
-      label: 'Help & Feedback',
-      href: '/help-feedback',
-    },
-    {
-      label: 'Logout',
-      href: '/logout',
+      href: '/',
     },
   ],
   links: {
-    github: 'https://github.com/nextui-org/nextui',
+    github: 'https://github.com/mauriciodavalos',
     twitter: 'https://twitter.com/getnextui',
     docs: 'https://nextui.org',
-    discord: 'https://discord.gg/9b6yyZKmH4',
+    discord: 'https://discord.gg/Mauron#7622',
     sponsor: 'https://patreon.com/jrgarciadev',
   },
 };

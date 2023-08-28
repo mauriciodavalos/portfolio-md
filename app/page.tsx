@@ -12,6 +12,7 @@ import {
   BiLogoTypescript,
 } from 'react-icons/bi';
 import { Image } from '@nextui-org/image';
+import { Button, ButtonGroup } from '@nextui-org/button';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           <h1 className={title()}>Hello&nbsp;</h1>
           <h1 className={title({ color: 'blue' })}>World!&nbsp;</h1>
           <br />
-          <h1 className={title()}>- I`m Mauricio Davalos</h1>
+          <h1 className={title()}>- I&apos;m Mauricio Davalos</h1>
           <h2 className={subtitle({ class: 'mt-4' })}>
             Full-Stack Developer & Web Designer
           </h2>
@@ -38,16 +39,23 @@ export default function Home() {
       </section>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
-          <h1 className={title()}>About&nbsp;</h1>
-          <h1 className={title({ color: 'blue' })}>Me&nbsp;</h1>
+          <div className="flex justify-center">
+            <h1 className="text-3xl">About&nbsp;</h1>
+            <h1 className="text-3xl text-blue-500">Me&nbsp;</h1>
+          </div>
           <p className="text-justify m-1">
             Hi there! My name is Mauricio Dávalos, but everyone calls me Mau or
-            Mauro. I`m passionate about technology and always seeking challenges
-            that allow me to develop my full potential. As a Full Stack
-            Developer, I have a deep understanding of the technologies powering
-            modern web applications.
+            Mauro. I&apos;m passionate about technology and always seeking
+            challenges that allow me to develop my full potential. As a Full
+            Stack Developer, I have a deep understanding of the technologies
+            powering modern web applications.
           </p>
         </div>
+        <a href="/public/CV Mauricio Davalos.pdf" download>
+          <Button color="primary" variant="shadow">
+            Download CV
+          </Button>
+        </a>
       </section>
       <section>
         <div className="flex justify-center">
