@@ -44,11 +44,10 @@ export default function Home() {
             <h1 className="text-3xl text-blue-500">Me&nbsp;</h1>
           </div>
           <p className="text-justify m-1">
-            Hi there! My name is Mauricio Dávalos, but everyone calls me Mau or
-            Mauro. I&apos;m passionate about technology and always seeking
-            challenges that allow me to develop my full potential. As a Full
-            Stack Developer, I have a deep understanding of the technologies
-            powering modern web applications.
+            Hi there! My name is Mauricio Dávalos, Elevating the game in tech, I
+            thrive on challenges that unleash my full-stack potential.
+            Proficient in cutting-edge web technologies, I don&apost just code,
+            I engineer seamless digital experiences.
           </p>
         </div>
         <a href="/public/CV Mauricio Davalos.pdf" download>
