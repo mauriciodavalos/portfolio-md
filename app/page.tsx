@@ -42,7 +42,7 @@ export default function Home() {
           <h1 className={title({ color: 'blue' })}>Me&nbsp;</h1>
           <p className="text-justify m-1">
             Hi there! My name is Mauricio Dávalos, but everyone calls me Mau or
-            Mauro. I'm passionate about technology and always seeking challenges
+            Mauro. I`m passionate about technology and always seeking challenges
             that allow me to develop my full potential. As a Full Stack
             Developer, I have a deep understanding of the technologies powering
             modern web applications.
