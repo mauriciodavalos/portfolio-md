@@ -44,10 +44,9 @@ export default function Home() {
             <h1 className="text-3xl text-blue-500">Me&nbsp;</h1>
           </div>
           <p className="text-justify m-1">
-            Hi there! My name is Mauricio Dávalos, Elevating the game in tech, I
-            thrive on challenges that unleash my full-stack potential.
-            Proficient in cutting-edge web technologies, I don&apost just code,
-            I engineer seamless digital experiences.
+            Elevating the game in tech, I thrive on challenges that unleash my
+            full-stack potential. Proficient in cutting-edge web technologies, I
+            don&apos;t just code, I engineer seamless digital experiences.
           </p>
         </div>
         <a href="/public/CV Mauricio Davalos.pdf" download>
