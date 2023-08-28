@@ -21,7 +21,7 @@ export default function Home() {
           <h1 className={title()}>Hello&nbsp;</h1>
           <h1 className={title({ color: 'blue' })}>World!&nbsp;</h1>
           <br />
-          <h1 className={title()}>- I´m Mauricio Davalos</h1>
+          <h1 className={title()}>- I`m Mauricio Davalos</h1>
           <h2 className={subtitle({ class: 'mt-4' })}>
             Full-Stack Developer & Web Designer
           </h2>
