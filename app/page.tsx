@@ -6,13 +6,14 @@ import { Divider } from '@nextui-org/divider';
 import { UilJavaScript, UilHtml5, UilReact } from '@iconscout/react-unicons';
 import {
   BiLogoJavascript,
-  BiLogoAngular,
+  BiLogoAws,
   BiLogoMongodb,
   BiLogoTailwindCss,
   BiLogoTypescript,
 } from 'react-icons/bi';
 import { Image } from '@nextui-org/image';
-import { Button, ButtonGroup } from '@nextui-org/button';
+import { Button } from '@nextui-org/button';
+import { Popover, PopoverTrigger, PopoverContent } from '@nextui-org/popover';
 
 export default function Home() {
   return (
@@ -35,6 +36,24 @@ export default function Home() {
               className="mt-3"
             />
           </div>
+          <div className="mt-5">
+            <Popover placement="right">
+              <PopoverTrigger>
+                <Button color="success" variant="shadow">
+                  Personal Info
+                </Button>
+              </PopoverTrigger>
+              <PopoverContent>
+                <div className="px-1 py-2">
+                  <div className="text-small font-bold">Age: 31</div>
+                  <div className="text-small font-bold">Location: México</div>
+                  <div className="text-small font-bold">
+                    Email: maudavalos1992@gmail.com
+                  </div>
+                </div>
+              </PopoverContent>
+            </Popover>
+          </div>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
@@ -49,16 +68,32 @@ export default function Home() {
             don&apos;t just code, I engineer seamless digital experiences.
           </p>
         </div>
-        <a href="/public/CV Mauricio Davalos.pdf" download>
+        <div className="flex justify-center mt-1 mb-4">
+          <div className="justify-center m-1">
+            <div className="grid grid-rows-1 grid-flow-col gap-3">
+              <div className="box-content h-[10vp] w-[1vp] p-2 border-3 border-blue-500 text-sm">
+                <p className="text-4xl align-middle">5+</p>
+                <p>Years Experience</p>
+              </div>
+              <div className="grid grid-cols-2 gap-2 box-content h-[10vp] p-1 border-3 border-blue-400 text-xs align-middle">
+                <p className="align-middle">15+ projects</p>
+                <p className="align-middle">10+ Happy Customers</p>
+                <p className="align-middle">Best Practices</p>
+                <p className="align-middle">Performance Driven</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="/CV_Mauricio_Davalos.pdf" download>
           <Button color="primary" variant="shadow">
             Download CV
           </Button>
         </a>
       </section>
-      <section>
-        <div className="flex justify-center">
-          <Card className="w-[70vw]">
-            <CardHeader className="flex gap-3">
+      <section className="flex justify-center">
+        <div>
+          <Card className="max-w-[600px] items-center m-1">
+            <CardHeader className="flex gap-3 ">
               <div className="flex flex-col">
                 <h2 className="text-center text-xl">My Skills</h2>
               </div>
@@ -94,8 +129,8 @@ export default function Home() {
                 <p>TypeScript</p>
               </CardBody>
               <CardBody className="flex flex-row">
-                <BiLogoAngular size="2em" color="#ff0000" />
-                <p>Angular</p>
+                <BiLogoAws size="2em" color="#FF8C00	" />
+                <p>AWS</p>
               </CardBody>
             </div>
             <Divider />
@@ -103,11 +138,19 @@ export default function Home() {
               <Link
                 isExternal
                 showAnchorIcon
-                href="https://github.com/nextui-org/nextui">
+                href="https://github.com/mauriciodavalos">
                 Visit source code on GitHub.
               </Link>
             </CardFooter>
           </Card>
+        </div>
+      </section>
+      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+        <div className="inline-block max-w-lg text-center justify-center">
+          <div className="flex justify-center">
+            <h1 className="text-3xl">Featured&nbsp;</h1>
+            <h1 className="text-3xl text-blue-500">Projects&nbsp;</h1>
+          </div>
         </div>
       </section>
     </div>
