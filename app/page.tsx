@@ -84,7 +84,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <a href="/CV_Mauricio_Davalos.pdf" download>
+        <a
+          href="https://drive.google.com/file/d/1Y0BWP6Xyph27nQQZAD-mKCKz4Uxeb1Gi/view?usp=sharing"
+          target="_blank">
           <Button color="primary" variant="shadow">
             Download CV
           </Button>
@@ -152,7 +154,12 @@ export default function Home() {
             <h1 className="text-3xl text-blue-500">Projects&nbsp;</h1>
           </div>
         </div>
+        <Projects />
       </section>
     </div>
   );
+}
+
+function Projects() {
+  return <h1>Hello</h1>;
 }
