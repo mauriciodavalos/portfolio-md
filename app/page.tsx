@@ -18,7 +18,9 @@ import { Popover, PopoverTrigger, PopoverContent } from '@nextui-org/popover';
 export default function Home() {
   return (
     <div>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+      <section
+        id="profile-section"
+        className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <h1 className={title()}>Hello&nbsp;</h1>
           <h1 className={title({ color: 'blue' })}>World!&nbsp;</h1>
@@ -37,7 +39,7 @@ export default function Home() {
             />
           </div>
           <div className="mt-5">
-            <Popover placement="right">
+            <Popover placement="bottom" showArrow={true}>
               <PopoverTrigger>
                 <Button color="success" variant="shadow">
                   Personal Info
@@ -92,7 +94,7 @@ export default function Home() {
           </Button>
         </a>
       </section>
-      <section className="flex justify-center">
+      <section id="skills-section" className="flex justify-center">
         <div>
           <Card className="max-w-[600px] items-center m-1">
             <CardHeader className="flex gap-3 ">
@@ -147,19 +149,40 @@ export default function Home() {
           </Card>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+      <section
+        id="projects-section"
+        className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
         <div className="inline-block max-w-lg text-center justify-center">
           <div className="flex justify-center">
             <h1 className="text-3xl">Featured&nbsp;</h1>
             <h1 className="text-3xl text-blue-500">Projects&nbsp;</h1>
           </div>
         </div>
-        <Projects />
+        <div className="grid grid-cols-2 gap-2">
+          <Projects title={'Bikes Shot'} image={'/bikesshot.png'} />
+          <Projects title={'MD Joyeros'} image={'/mdjoyeros.png'} />
+          <Projects title={'LogiSync'} image={'/logiSync.png'} />{' '}
+          <Projects title={'FarAway App'} image={'/faraway.png'} />
+        </div>
       </section>
     </div>
   );
 }
 
-function Projects() {
-  return <h1>Hello</h1>;
+function Projects({ title, image }) {
+  return (
+    <Card className="py-4">
+      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+        <p className="text-tiny uppercase font-bold">{title}</p>
+      </CardHeader>
+      <CardBody className="overflow-visible py-2">
+        <Image
+          alt="Card background"
+          className="object-cover rounded-xl"
+          src={image}
+          width={270}
+        />
+      </CardBody>
+    </Card>
+  );
 }

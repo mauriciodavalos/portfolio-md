@@ -6,29 +6,29 @@ export const siteConfig = {
   navItems: [
     {
       label: 'Profile',
-      href: '/',
+      href: '#profile-section',
     },
     {
-      label: 'Dashboard',
-      href: '/',
+      label: 'Skills',
+      href: '#skills-section',
     },
     {
       label: 'Projects',
-      href: '/',
+      href: '#projects-section',
     },
   ],
   navMenuItems: [
     {
       label: 'Profile',
-      href: '/',
+      href: '#profile-section',
     },
     {
-      label: 'Dashboard',
-      href: '/',
+      label: 'Skills',
+      href: '#skills-section',
     },
     {
       label: 'Projects',
-      href: '/',
+      href: '#projects-section',
     },
   ],
   links: {
