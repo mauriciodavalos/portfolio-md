@@ -169,7 +169,12 @@ export default function Home() {
   );
 }
 
-function Projects({ title, image }) {
+interface ProjectsProps {
+  title: string;
+  image: string;
+}
+
+const Projects: React.FC<ProjectsProps> = ({ title, image }) => {
   return (
     <Card className="py-4">
       <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
@@ -185,4 +190,4 @@ function Projects({ title, image }) {
       </CardBody>
     </Card>
   );
-}
+};
