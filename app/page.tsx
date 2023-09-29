@@ -159,10 +159,30 @@ export default function Home() {
           </div>
         </div>
         <div className="grid grid-cols-2 gap-2">
-          <Projects title={'Bikes Shot'} image={'/bikesshot.png'} />
-          <Projects title={'MD Joyeros'} image={'/mdjoyeros.png'} />
-          <Projects title={'LogiSync'} image={'/logiSync.png'} />{' '}
-          <Projects title={'FarAway App'} image={'/faraway.png'} />
+          <a
+            href="https://bikesshot.com.mx/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Projects title={'Bikes Shot'} image={'/bikesshot.png'} />
+          </a>
+          <a
+            href="https://mdjoyeros.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Projects title={'MD Joyeros'} image={'/mdjoyeros.png'} />
+          </a>
+          <a
+            href="https://transport-app-logisync.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Projects title={'LogiSync'} image={'/logiSync.png'} />
+          </a>
+          <a
+            href="https://far-away-app-five.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer">
+            <Projects title={'FarAway App'} image={'/faraway.png'} />
+          </a>
         </div>
       </section>
     </div>
