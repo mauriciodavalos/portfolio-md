@@ -2,7 +2,7 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   name: 'MD Portfolio',
-  description: 'Welcome to a the next generation of dev-signer',
+  description: 'Welcome to the next generation of dev-signer',
   navItems: [
     {
       label: 'Profile',
